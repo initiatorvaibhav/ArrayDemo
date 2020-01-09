@@ -38,7 +38,7 @@ public class ArrayDemo {
      *
      * @param array an integer array
      * @param value the value to be searched
-     * @return True if the {@param value} is found in the {@param array}
+     * @return True if the value if found in the array
      */
     public static boolean searchInArray(int[] array, int value) {
         boolean response = false;

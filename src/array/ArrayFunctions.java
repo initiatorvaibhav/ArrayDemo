@@ -55,8 +55,8 @@ public class ArrayFunctions {
     }
 
     public void shiftElements(int[] array, int index) {
-        for (int i = index; i <= array.length - 1; i++) {
-            array[i - 1] = array[i];
+        for (int i = index; i < array.length - 1; i++) {
+            array[i] = array[i + 1];
         }
         insertValue(array, 0);
     }
@@ -67,7 +67,6 @@ public class ArrayFunctions {
      *
      * @param index the index at which the value is to be deleted
      * @param array the integer array
-     * @return {@code true} if the value was deleted else {@code false}.
      */
     public void deleteValue(int index, int[] array) {
 //        boolean response = false;
@@ -77,6 +76,8 @@ public class ArrayFunctions {
 
     /**
      * This method will search for an integer value inside an integer array.
+     *
+     * @return integer
      */
     public int searchValue(int[] array, int value) {
         int response = -1;
@@ -91,6 +92,7 @@ public class ArrayFunctions {
 
     /*
      * This method will sort the values of the integer array in an increasing order.
+     *
      * */
     public void sortValues(int[] array) {
 
